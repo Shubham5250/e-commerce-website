@@ -1,0 +1,455 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'ubuntu';
+}
+
+/* webpage STYLING */
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background: #f32005;
+}
+::-webkit-scrollbar-track{
+    background: #606272;
+}
+body{
+    -webkit-user-select: none;
+    font-family: 'ubuntu';
+    scroll-behavior: smooth;
+    background: var(--tertiary-color-);
+
+}
+:root{
+    --primary-color- : #ed6b5b;
+    --secondary-color- : #3a3e59;
+    --tertiary-color-: rgb(255, 255, 255);
+
+}
+#moon{
+    height: 1.1rem;
+    cursor: pointer;
+}
+.dark-theme{
+    --primary-color- : #e75541;
+    --secondary-color- : #ffffff;
+    --tertiary-color-: rgb(22, 22, 22);
+}
+/* ---------------navbar styling-------------- */
+
+/* ----logo-styling----- */
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #e2e0e0;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .fas{
+    color: var(--secondary-color-);
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem 0 0.5rem 1rem;
+    padding: 0.7rem;
+}
+.logo i{
+    margin-right: 0.4rem;
+    cursor: pointer;
+}
+.logo h2{
+    color: var(--primary-color-);
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav-contents a{
+    text-decoration: none;
+    padding: 1rem;
+    color: var(--secondary-color-);
+    font-weight: 600;
+    transition: 0.4s ease-in-out;
+}
+.nav-contents a:hover{
+    color: var(--primary-color-);
+}
+.accounts{
+    padding-right: 1.2rem;
+}
+.accounts i{
+    margin: 5px;
+    transition: ease-in 0.2s;
+    font-size: 1.5rem;
+    color: var(--secondary-color-);
+}
+.accounts i:hover{
+    cursor: pointer;
+    color: var(--primary-color-);
+}
+#moon{
+    font-size: 1.5rem;
+}
+.searchbox{
+    padding-left: 0.5rem;
+    border: none;
+    background: #f5f5f6;
+}
+.search-fill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select-category select{
+    height: 2.6rem;
+    width: auto;
+    border: none ;
+    font-family: 'ubuntu';
+    font-weight: 700;
+    background: #f5f5f6;
+}
+.searchbox:focus{
+    outline: 0;
+    border-color: rgb(255, 255, 255);
+}
+.select-category select:focus{
+    outline: 0;
+    border-color: #fff;
+}
+.search-col-right{
+    display: flex;
+    background-color: #f5f5f6;
+    padding-right: 15px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    transition: ease .5s;
+}
+.search-col-right i{
+    transition: ease 0.4s;
+}
+.search-col-right i:hover{
+    color: var(--primary-color-);
+    cursor: pointer;
+}
+
+/* ------------------slider-images section styling--------------- */
+
+.images-slide-container{
+    transition: 0.9s cubic-bezier(0.48, 0.15, 0.18, 1);
+    position: relative;
+}
+.slider-section{
+    width: 60%;
+    overflow: hidden;
+    display: inline-block;
+    height: 65vh;
+}
+.images-slide-container{
+    height: 500px;
+    position: relative;
+}
+.slide-images{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.slide-images img{
+    object-fit: cover;
+}
+#slide-img-1 img{
+    height: 60vh;
+}
+#slide-img-2 img{
+    height: 60vh;
+}
+#slide-img-3 img{
+    height: 60vh;
+}
+#slide-img-4 img{
+    height: 60vh;
+}
+#slide-img-5 img{
+    height: 60vh;
+}
+#slide-img-6 img{
+    height: 60vh;
+}
+#slide-img-7 img{
+    height: 60vh;
+}
+.prev-btn{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    font-size: 3rem;
+    z-index: 1000;
+    color: #ed6b5b;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+.next-btn{
+    position: absolute;
+    top: 40%;
+    left: 56%;
+    font-size: 3rem;
+    z-index: 1000;
+    color: #ed6b5b;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+
+/* ----nav-dots styling--- */
+.navigation-dots{
+    display: flex;
+    width: 60%;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.single-dot{
+    background: #9e9ea0;
+    height: 0.8rem;
+    width: 0.8rem;
+    margin: 0.3rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.single-dot.active{
+    background: #ed6b5b;
+}
+
+/* ------front page side image styling */
+
+.landing-col-right{
+    position: absolute;
+    top: 14%;
+    right: 2%;
+}
+.landing-col-right-heading h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    padding-top: 15px;
+    font-family: 'ubuntu';
+    text-align: center;
+    color: var(--secondary-color-);
+}
+.download-card{
+    background: var(--secondary-color-);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+    cursor: pointer;
+    align-items: center;
+    -webkit-box-align: center;
+}
+.download-card-text{
+    color: var(--tertiary-color-);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: normal;
+
+}
+
+
+/* --------section styling starts----- */
+.section-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 0.70px;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 3.1rem;
+    color: var(--primary-color-);
+}
+.sctn-line{
+    width: 22%;
+    background: var(--secondary-color-);
+    height: 1px;
+}
+.top-brands-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 7rem;
+}
+.top-brands-img img{
+    height: 3rem;
+    cursor: pointer;
+}
+
+.top-brands-section-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+}
+
+
+
+
+/* ---categories section---- */
+.categories-section-heading{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 0.70px;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 3.1rem;
+    color: var(--primary-color-);
+    margin-bottom: 4rem;
+}
+.categories-section-display-cards{
+    display: flex;
+    justify-content: center;
+}
+.categories-section-bg{
+    background: radial-gradient(#ffeded, #ffb6ac);
+    margin-bottom: 4rem;
+    height: 85vh;
+    width: 80%;
+}
+
+.categories-section-bg span{
+    font-family: 'lobster', cursive;
+    font-size: 4rem;
+    padding: 0.5rem 0.8rem;
+    color: rgb(31, 31, 31);
+    cursor: pointer;
+    display:    block;
+}
+
+.display-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-1{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.categories-heading{
+    margin-right: 2rem;
+}
+.col-right img{
+    padding-top: 2rem;
+}
+.col-right{
+    display: flex;
+    flex-direction: column;
+}
+.category-displaycards{
+    position: relative;
+}
+.layer{
+    background: transparent;
+    height: 420px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.layer:hover{
+    background: rgba(24, 24, 24, 0.3);
+}
+.layer h2{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 800;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer p{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'signika';
+    font-weight: 400;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h2{
+    bottom: 49%;
+    opacity: 1;
+}
+.layer:hover p{
+    bottom: 40%;
+    opacity: 1;
+}
+.layer-2{
+    background: transparent;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.layer-2:hover{
+    background: rgba(24, 24, 24, 0.3);
+}
+.layer-2 h2{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 800;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer-2 p{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'signika';
+    font-weight: 400;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer-2:hover h2{
+    bottom: 49%;
+    opacity: 1;
+}
